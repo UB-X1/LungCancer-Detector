@@ -25,6 +25,8 @@ def check_folder(repo_id, file_list):
         logging.info("All model files are present.")
         return True
 
+
+#download_models functions
 def download_models(repo_id, file_list, target_subdir='model/models'):
     base_dir = Path(__file__).resolve().parent.parent
     local_dir = base_dir / target_subdir
